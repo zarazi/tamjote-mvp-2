@@ -36,6 +36,7 @@ jquery@1.11.4
 kadira:blaze-layout@2.3.0
 kadira:flow-router@2.10.0
 launch-screen@1.0.4
+less@2.5.1
 livedata@1.0.15
 logging@1.0.8
 meteor@1.1.10
