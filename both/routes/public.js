@@ -1,6 +1,6 @@
 FlowRouter.route('/', {
-    name: 'index',
+    name: 'home',
     action() {
-        console.log("You are at index (/)");
+        BlazeLayout.render('default', {main: 'homePage'});
     }
 });
