@@ -1,7 +1,17 @@
-ZapKit - Starter
+ZapKit - Basic
 ----------------
-
-Develop from blank.
+- Develop from ZapKit-Starter
+- Includes Bootstrap 3.3.6 Less with Bootswatch Super Hero Theme
+- And Additional Packages:
+    - kadira:flow-router
+    - kadira:blaze-layout
+    - less
+    - aldeed:simple-schema
+    - aldeed:collection2
+    - ian:accounts-ui-bootstrap-3
+    - accounts-password
+    - zimme:active-route
+    - arillo:flow-router-helpers
 
 <table>
   <tbody>
