@@ -1,0 +1,12 @@
+<template name="overlay">
+    <div class="notifications"></div>
+    <div class="app-layout">
+        <div class="search-overlay"></div>
+        <div class="app-content">
+            {{> navDefault}}
+            <div class="container page">
+                {{> Template.dynamic template=main}}
+            </div>
+        </div>
+    </div>
+</template>
