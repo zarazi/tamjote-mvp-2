@@ -1,0 +1,20 @@
+<template name="defaultOverlay">
+    <div class="notifications"></div>
+    <div class="app-layout">
+        {{> navDefault}}
+        <div class="app-overlay">
+            <div class="overlay-content">
+                <p class="top-right text-center">
+                    <a href="#" class="btn-float btn-hide-overlay">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="app-content">
+            <div class="container page">
+                {{> Template.dynamic template=main}}
+            </div>
+        </div>
+    </div>
+</template>
