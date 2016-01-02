@@ -1,6 +1,7 @@
 <template name="defaultOverlay">
     <div class="notifications"></div>
     <div class="app-layout">
+        {{> navDefault}}
         <div class="app-overlay">
             <div class="overlay-content">
                 <p class="top-right text-center">
@@ -11,7 +12,6 @@
             </div>
         </div>
         <div class="app-content">
-            {{> navDefault}}
             <div class="container page">
                 {{> Template.dynamic template=main}}
             </div>
