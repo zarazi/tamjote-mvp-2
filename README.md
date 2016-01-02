@@ -5,7 +5,7 @@ ZapKit - Basic
   <tbody>
     <tr>
       <th>Kit Version</th>
-      <td>v0.0.3</td>
+      <td>v0.0.4</td>
     </tr>
     <tr>
       <th>Meteor Version</th>
@@ -14,6 +14,10 @@ ZapKit - Basic
   </tbody>
 </table>
 
+`v0.0.4`
+
+- grouped routes
+- added comment to stylesheet for better tracking
 
 `v0.0.3`
 
