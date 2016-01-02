@@ -1,5 +1,32 @@
 ZapKit - Basic
 ----------------
+
+<table>
+  <tbody>
+    <tr>
+      <th>Kit Version</th>
+      <td>v0.0.3</td>
+    </tr>
+    <tr>
+      <th>Meteor Version</th>
+      <td>v1.2.1</td>
+    </tr>
+  </tbody>
+</table>
+
+
+`v0.0.3`
+
+- added overlayout and example page
+- added addtional packages
+    - fortawesome:fontawesome
+
+`v0.0.2`
+
+- simplify bootstrap folder struture & imports
+
+`v0.0.1`
+
 - Develop from ZapKit-Starter
 - Includes Bootstrap 3.3.6 Less with Bootswatch Super Hero Theme
 - And Additional Packages:
@@ -12,18 +39,7 @@ ZapKit - Basic
     - accounts-password
     - zimme:active-route
     - arillo:flow-router-helpers
+    
 
-<table>
-  <tbody>
-    <tr>
-      <th>Kit Version</th>
-      <td>v0.0.2</td>
-    </tr>
-    <tr>
-      <th>Meteor Version</th>
-      <td>v1.2.1</td>
-    </tr>
-  </tbody>
-</table>
 
 
