@@ -5,7 +5,7 @@ ZapKit - Basic
   <tbody>
     <tr>
       <th>Kit Version</th>
-      <td>v0.0.4</td>
+      <td>v0.0.5</td>
     </tr>
     <tr>
       <th>Meteor Version</th>
@@ -13,6 +13,14 @@ ZapKit - Basic
     </tr>
   </tbody>
 </table>
+
+`v0.0.5`
+
+- added react samples
+- added additional packages
+    - react
+    - kadira:react-layout
+    - thereactivestack:blazetoreact
 
 `v0.0.4`
 
