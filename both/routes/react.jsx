@@ -10,3 +10,13 @@ reactSection.route('/react-hello', {
         });
     }
 });
+
+reactSection.route('/react-hello-overlay', {
+    name: 'reactHelloOverlay',
+    action() {
+        ReactLayout.render(MainLayout, {
+            content: <HelloOverlayComponent name="Zarazi" />,
+            overlay: <OverlayComponent />
+        });
+    }
+});
