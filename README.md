@@ -5,7 +5,7 @@ ZapKit - Basic
   <tbody>
     <tr>
       <th>Kit Version</th>
-      <td>v0.0.5</td>
+      <td>v0.0.6</td>
     </tr>
     <tr>
       <th>Meteor Version</th>
@@ -13,6 +13,13 @@ ZapKit - Basic
     </tr>
   </tbody>
 </table>
+
+`0.0.6`
+
+- Match Blaze & React samples equally
+    - similar folder structure
+    - using Higher Order Component (HOC) in React, for Blaze Wrapper
+    - move app.html under client directly, supports both UI renderer
 
 `v0.0.5`
 
