@@ -27,6 +27,7 @@ NavbarComponent = React.createClass({
                             <ul className="nav navbar-nav">
                                 <li className={FlowHelpers.currentRoute('reactHello')}><a href={FlowHelpers.pathFor('reactHello')}>Hello</a></li>
                                 <li className={FlowHelpers.currentRoute('reactHelloOverlay')}><a href={FlowHelpers.pathFor('reactHelloOverlay')}>Overlay</a></li>
+                                <li className={FlowHelpers.currentRoute('reactPrivate')}><a href={FlowHelpers.pathFor('reactPrivate')}>Private</a></li>
                             </ul>
                             <LoginButtons />
                         </div>

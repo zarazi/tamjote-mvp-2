@@ -20,3 +20,12 @@ reactSection.route('/react-hello-overlay', {
         });
     }
 });
+
+reactSection.route('/react-private', {
+    name: 'reactPrivate',
+    action() {
+        ReactLayout.render(MainLayout, {
+            content: <PrivateComponent name="Zarazi" />
+        });
+    }
+});
