@@ -1,7 +1,9 @@
-PrivateComponent = React.createClass({
+PrivateComponent = OnlyLoggedIn(React.createClass({
     render() {
-        return  <div className="jumbotron">
-                    <h2>You got it!</h2>
-                </div>
+        return  (
+            <div className="jumbotron">
+                <h3>{this.props.name}, You got it!</h3>
+            </div>
+        );
     }
-});
+}));
