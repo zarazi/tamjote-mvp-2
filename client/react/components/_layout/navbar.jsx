@@ -3,6 +3,14 @@ const LoginButtons = BlazeToReact('_loginButtons', {
 });
 
 NavbarComponent = React.createClass({
+    handleClick: function(event) {
+        event.preventDefault();
+        const target = $(event.target);
+        if (target.is('a:not([class^="dropdown"])')) {
+            $(event.currentTarget).collapse('hide');
+        }
+    },
+
     render() {
         return  <nav className="navbar navbar-default navbar-fixed-top">
                     <div className="container">
@@ -15,7 +23,7 @@ NavbarComponent = React.createClass({
                             </button>
                             <a className="navbar-brand" href="/home">Project name</a>
                         </div>
-                        <div id="navbar" className="navbar-collapse collapse">
+                        <div id="navbar" className="navbar-collapse collapse" onClick={this.handleClick}>
                             <ul className="nav navbar-nav">
                                 <li className={FlowHelpers.currentRoute('reactHello')}><a href={FlowHelpers.pathFor('reactHello')}>Hello</a></li>
                                 <li className={FlowHelpers.currentRoute('reactHelloOverlay')}><a href={FlowHelpers.pathFor('reactHelloOverlay')}>Overlay</a></li>
