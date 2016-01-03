@@ -1,5 +1,8 @@
 const reactSection = FlowRouter.group({
-    name: 'react'
+    name: 'react',
+    triggersExit: [function(context, redirect) {
+        $('.navbar-collapse').collapse('hide');
+    }]
 });
 
 reactSection.route('/react-hello', {
