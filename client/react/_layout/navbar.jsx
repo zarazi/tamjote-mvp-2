@@ -25,7 +25,7 @@ NavbarComponent = React.createClass({
                     </div>
                     <div id="navbar" className="navbar-collapse collapse" onClick={this.handleClick}>
                         <ul className="nav navbar-nav">
-                            <li className={FlowHelpers.currentRoute('reactHome')}><a href={FlowHelpers.pathFor('reactHome')}>Hello</a></li>
+                            <li className={FlowHelpers.currentRoute('reactHome')}><a href={FlowHelpers.pathFor('reactHome')}>Home</a></li>
                             <li className={FlowHelpers.currentRoute('reactSampleOverlay')}><a href={FlowHelpers.pathFor('reactSampleOverlay')}>Overlay</a></li>
                             <li className={FlowHelpers.currentRoute('reactSamplePrivate')}><a href={FlowHelpers.pathFor('reactSamplePrivate')}>Private</a></li>
                         </ul>
