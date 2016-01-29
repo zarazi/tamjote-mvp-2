@@ -1,4 +1,4 @@
-PrivateComponent = OnlyLoggedIn(React.createClass({
+SamplePrivatePage = OnlyLoggedIn(React.createClass({
     render() {
         return  (
             <div className="jumbotron">

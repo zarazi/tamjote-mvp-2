@@ -1,4 +1,4 @@
-OverlayComponent = React.createClass({
+SampleOverlayContent = React.createClass({
     handleClick(event) {
         event.preventDefault();
         $('.app-layout').removeClass('show-overlay');

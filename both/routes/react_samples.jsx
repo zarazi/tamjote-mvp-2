@@ -7,8 +7,8 @@ reactSamplesSection.route('/overlay', {
     name: 'reactSampleOverlay',
     action() {
         ReactLayout.render(MainOverlay, {
-            content: <HelloOverlayComponent name="Zarazi" />,
-            overlay: <OverlayComponent />
+            content: <SampleOverlayPage />,
+            overlay: <SampleOverlayContent />
         });
     }
 });
@@ -17,7 +17,7 @@ reactSamplesSection.route('/private', {
     name: 'reactSamplePrivate',
     action() {
         ReactLayout.render(MainLayout, {
-            content: <PrivateComponent name="Zarazi" />
+            content: <SamplePrivatePage name="Zarazi" />
         });
     }
 });

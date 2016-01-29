@@ -6,7 +6,7 @@ reactSection.route('/react', {
     name: 'reactHome',
     action() {
         ReactLayout.render(MainLayout, {
-            content: <HelloComponent name="Zarazi" />
+            content: <HomePage />
         });
     }
 });
