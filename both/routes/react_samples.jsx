@@ -1,0 +1,23 @@
+const reactSamplesSection = FlowRouter.group({
+    name: 'reactSamples',
+    prefix: '/react/samples'
+});
+
+reactSamplesSection.route('/overlay', {
+    name: 'reactSampleOverlay',
+    action() {
+        ReactLayout.render(MainLayout, {
+            content: <HelloOverlayComponent name="Zarazi" />,
+            overlay: <OverlayComponent />
+        });
+    }
+});
+
+reactSamplesSection.route('/private', {
+    name: 'reactSamplePrivate',
+    action() {
+        ReactLayout.render(MainLayout, {
+            content: <PrivateComponent name="Zarazi" />
+        });
+    }
+});
