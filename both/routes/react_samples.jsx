@@ -6,7 +6,7 @@ const reactSamplesSection = FlowRouter.group({
 reactSamplesSection.route('/overlay', {
     name: 'reactSampleOverlay',
     action() {
-        ReactLayout.render(MainLayout, {
+        ReactLayout.render(MainOverlay, {
             content: <HelloOverlayComponent name="Zarazi" />,
             overlay: <OverlayComponent />
         });
