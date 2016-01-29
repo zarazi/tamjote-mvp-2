@@ -16,6 +16,8 @@ blazeSamplesSection.route('/overlay', {
 blazeSamplesSection.route('/private', {
     name: 'blazeSamplePrivate',
     action() {
-        BlazeLayout.render('mainLayout', {main: 'privatePage'});
+        BlazeLayout.render('mainLayout', {
+            main: 'samplePrivatePage'
+        });
     }
 });
