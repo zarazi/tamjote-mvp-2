@@ -1,4 +1,4 @@
-HelloOverlayComponent = React.createClass({
+SampleOverlayPage = React.createClass({
     handleClick(event) {
         event.preventDefault();
         $('.app-layout').addClass('show-overlay');
@@ -6,7 +6,7 @@ HelloOverlayComponent = React.createClass({
     render() {
         return (
             <div className="jumbotron">
-                Hello {this.props.name}<br/>
+                <h2>Sample Overlay Page</h2>
                 <a href="#" className="btn btn-primary btn-show-overlay" onClick={this.handleClick}>Show Overlay</a>
             </div>
         );

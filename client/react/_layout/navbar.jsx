@@ -21,13 +21,13 @@ NavbarComponent = React.createClass({
                             <span className="icon-bar"></span>
                             <span className="icon-bar"></span>
                         </button>
-                        <a className="navbar-brand" href="/home">Project name</a>
+                        <a className="navbar-brand" href={FlowHelpers.pathFor('reactHome')}>Project name</a>
                     </div>
                     <div id="navbar" className="navbar-collapse collapse" onClick={this.handleClick}>
                         <ul className="nav navbar-nav">
-                            <li className={FlowHelpers.currentRoute('reactHello')}><a href={FlowHelpers.pathFor('reactHello')}>Hello</a></li>
-                            <li className={FlowHelpers.currentRoute('reactHelloOverlay')}><a href={FlowHelpers.pathFor('reactHelloOverlay')}>Overlay</a></li>
-                            <li className={FlowHelpers.currentRoute('reactPrivate')}><a href={FlowHelpers.pathFor('reactPrivate')}>Private</a></li>
+                            <li className={FlowHelpers.currentRoute('reactHome')}><a href={FlowHelpers.pathFor('reactHome')}>Hello</a></li>
+                            <li className={FlowHelpers.currentRoute('reactSampleOverlay')}><a href={FlowHelpers.pathFor('reactSampleOverlay')}>Overlay</a></li>
+                            <li className={FlowHelpers.currentRoute('reactSamplePrivate')}><a href={FlowHelpers.pathFor('reactSamplePrivate')}>Private</a></li>
                         </ul>
                         <LoginButtons />
                     </div>

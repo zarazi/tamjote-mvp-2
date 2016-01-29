@@ -1,8 +1,8 @@
-HelloComponent = React.createClass({
+HomePage = React.createClass({
     render() {
         return (
             <div className="jumbotron">
-                Hello {this.props.name}
+                <h2>Homepage</h2>
             </div>
         );
     }
