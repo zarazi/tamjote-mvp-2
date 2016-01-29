@@ -1,10 +1,11 @@
-const publicSection = FlowRouter.group({
-    name: 'public'
+const blazeSection = FlowRouter.group({
+    name: 'blaze'
 });
 
-publicSection.route('/', {
+blazeSection.route('/', {
     name: 'home',
     action() {
         BlazeLayout.render('default', {main: 'homePage'});
     }
 });
+
