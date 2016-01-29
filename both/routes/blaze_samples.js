@@ -7,7 +7,7 @@ blazeSamplesSection.route('/overlay', {
     name: 'blazeSampleOverlay',
     action() {
         BlazeLayout.render('mainOverlay', {
-            main: 'sampleOverlayPage',
+            content: 'sampleOverlayPage',
             overlay: 'sampleOverlayContent'
         });
     }
@@ -17,7 +17,7 @@ blazeSamplesSection.route('/private', {
     name: 'blazeSamplePrivate',
     action() {
         BlazeLayout.render('mainLayout', {
-            main: 'samplePrivatePage'
+            content: 'samplePrivatePage'
         });
     }
 });
