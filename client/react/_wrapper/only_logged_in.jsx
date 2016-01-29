@@ -1,5 +1,6 @@
 OnlyLoggedIn = function (Component) {
     return React.createClass({
+        displayName: 'OnlyLoggedin',
         mixins: [ReactMeteorData],
         getMeteorData() {
             return {
