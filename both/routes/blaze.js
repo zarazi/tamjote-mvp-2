@@ -5,7 +5,7 @@ const blazeSection = FlowRouter.group({
 blazeSection.route('/blaze', {
     name: 'blazeHome',
     action() {
-        BlazeLayout.render('default', {main: 'homePage'});
+        BlazeLayout.render('mainLayout', {main: 'homePage'});
     }
 });
 
