@@ -1,10 +1,10 @@
 const blazeSamplesSection = FlowRouter.group({
     name: 'blazeSamples',
-    prefix: '/blaze-samples'
+    prefix: '/blaze/samples'
 });
 
 blazeSamplesSection.route('/overlay', {
-    name: 'sampleOverlay',
+    name: 'blazeSampleOverlay',
     action() {
         BlazeLayout.render('defaultOverlay', {
             main: 'sampleOverlayPage',
@@ -14,7 +14,7 @@ blazeSamplesSection.route('/overlay', {
 });
 
 blazeSamplesSection.route('/private', {
-    name: 'samplePrivate',
+    name: 'blazeSamplePrivate',
     action() {
         BlazeLayout.render('default', {main: 'privatePage'});
     }
