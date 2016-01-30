@@ -21,3 +21,13 @@ reactSamplesSection.route('/private', {
         });
     }
 });
+
+
+reactSamplesSection.route('/data', {
+    name: 'reactSampleData',
+    action() {
+        ReactLayout.render(MainLayout, {
+            content: <SampleDataPage />
+        });
+    }
+});
