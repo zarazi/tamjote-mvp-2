@@ -3,7 +3,7 @@
 </template>
 
 <template name="sampleDataPage">
-    {{#withData}}
+    {{#withData ready=ready}}
         <div class="jumbotron">
             <h3>List</h3>
             {{#each item in list}}

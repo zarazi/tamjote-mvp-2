@@ -4,7 +4,10 @@ Template.sampleDataPage.onCreated(function() {
     });
 });
 Template.sampleDataPage.helpers({
-   list: () => {
-       return List.find().fetch();
-   }
+    ready: () => {
+        return Template.instance().subscriptionsReady();
+    },
+    list: () => {
+        return List.find().fetch();
+    }
 });
