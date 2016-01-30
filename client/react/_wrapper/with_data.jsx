@@ -6,7 +6,10 @@ WithData = function (Component, getMeteorData) {
             return getMeteorData(this.props);
         },
         render() {
-            return <Component {...this.props} {...this.data} />
+            return ( this.data.ready
+                ?   <Component {...this.props} {...this.data} />
+                :   <div>Loading ...</div>
+            );
         }
     });
 };
