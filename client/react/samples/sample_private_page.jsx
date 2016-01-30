@@ -1,9 +1,9 @@
-SamplePrivatePage = OnlyLoggedIn(React.createClass({
-    render() {
-        return  (
+SamplePrivatePage = (
+    OnlyLoggedIn(
+        ({user}) => (
             <div className="jumbotron">
-                <h3>{this.props.name}, You got it!</h3>
+                <h3>Hello, {user.emails[0].address}</h3>
             </div>
-        );
-    }
-}));
+        )
+    )
+);

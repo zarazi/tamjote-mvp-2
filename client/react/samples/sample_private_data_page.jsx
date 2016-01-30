@@ -1,0 +1,5 @@
+SamplePrivateDataPage = (
+    OnlyLoggedIn (
+        SampleDataPage
+    )
+);

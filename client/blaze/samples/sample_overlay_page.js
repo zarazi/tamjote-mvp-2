@@ -4,7 +4,6 @@ Template.sampleOverlayPage.events({
     },
 
     'keyup': function(event, template) {
-        //console.log(event.which);
         if (event.which===27) {
             $('.app-layout').removeClass('show-overlay');
         }

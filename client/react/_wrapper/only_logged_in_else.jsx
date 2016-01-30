@@ -1,4 +1,4 @@
-OnlyLoggedIn = function (Component) {
+OnlyLoggedInElse = function (Component, ElseComponent) {
     return React.createClass({
         displayName: 'OnlyLoggedin',
         mixins: [ReactMeteorData],
@@ -10,7 +10,9 @@ OnlyLoggedIn = function (Component) {
         render: function() {
             return ( this.data.user
                 ?   <Component {...this.props} {...this.data} />
-                :   <span> Please log in to see this page. </span>
+                :   ElseComponent
+                    ? <ElseComponent />
+                    : <span> Please log in to see this page. </span>
             );
         }
     });

@@ -21,3 +21,30 @@ blazeSamplesSection.route('/private', {
         });
     }
 });
+
+blazeSamplesSection.route('/data', {
+    name: 'blazeSampleData',
+    action() {
+        BlazeLayout.render('mainLayout', {
+            content: 'sampleDataPage'
+        });
+    }
+});
+
+blazeSamplesSection.route('/private/data', {
+    name: 'blazeSamplePrivateData',
+    action() {
+        BlazeLayout.render('mainLayout', {
+            content: 'samplePrivateDataPage'
+        });
+    }
+});
+
+blazeSamplesSection.route('/private/data/user', {
+    name: 'blazeSamplePrivateDataUser',
+    action() {
+        BlazeLayout.render('mainLayout', {
+            content: 'samplePrivateDataUserPage'
+        });
+    }
+});

@@ -1,0 +1,16 @@
+<template name="samplePrivateUser">
+    {{# onlyLoggedInElse}}
+        <div class="jumbotron">
+            <h3>Hello, {{user.emails.[0].address}}</h3>
+        </div>
+    {{else}}
+        <div class="jumbotron">Please login to see this content</div>
+    {{/onlyLoggedInElse}}
+</template>
+
+<template name="samplePrivateDataUserPage">
+    <div>
+        {{> samplePrivateUser}}
+        {{> sampleDataPage}}
+    </div>
+</template>

@@ -17,7 +17,35 @@ reactSamplesSection.route('/private', {
     name: 'reactSamplePrivate',
     action() {
         ReactLayout.render(MainLayout, {
-            content: <SamplePrivatePage name="Zarazi" />
+            content: <SamplePrivatePage />
+        });
+    }
+});
+
+reactSamplesSection.route('/data', {
+    name: 'reactSampleData',
+    action() {
+        ReactLayout.render(MainLayout, {
+            content: <SampleDataPage />
+        });
+    }
+});
+
+reactSamplesSection.route('/private/data', {
+    name: 'reactSamplePrivateData',
+    action() {
+        ReactLayout.render(MainLayout, {
+            content: <SamplePrivateDataPage />
+        });
+    }
+});
+
+
+reactSamplesSection.route('/private/data/user', {
+    name: 'reactSamplePrivateDataUser',
+    action() {
+        ReactLayout.render(MainLayout, {
+            content: <SamplePrivateDataUserPage />
         });
     }
 });
