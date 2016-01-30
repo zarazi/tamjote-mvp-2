@@ -5,7 +5,7 @@ ZapKit - Basic
   <tbody>
     <tr>
       <th>Kit Version</th>
-      <td>v0.0.6</td>
+      <td>v0.0.7</td>
     </tr>
     <tr>
       <th>Meteor Version</th>
@@ -13,6 +13,14 @@ ZapKit - Basic
     </tr>
   </tbody>
 </table>
+
+`0.0.7`
+
+- Sync Blaze-React, Added more samples, Removed packages
+    - same routes for Blaze & React
+    - same filename & folder
+    - added data wrapper, with sample usages
+    - remove autopublish, insecure
 
 `0.0.6`
 
