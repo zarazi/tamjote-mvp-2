@@ -1,13 +1,22 @@
+SampleDataItem = ({title}) => (
+  <div>{title}</div>
+);
+
 SampleDataPage = (
     WithData(
-        ({data}) => (
+        ({ready, list}) => (
             <div className="jumbotron">
-                <h3>Hello {data}</h3>
+                <h3>List</h3>
+                {list.map(({_id, title}) =>
+                    <SampleDataItem key={_id} title={title} />
+                )}
             </div>
         ),
         (props) => {
+            const handle = Meteor.subscribe('list');
             return {
-                data: 'Data'
+                ready: handle.ready(),
+                list: List.find().fetch()
             }
         }
     )
