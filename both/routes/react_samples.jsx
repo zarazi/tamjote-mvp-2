@@ -39,3 +39,13 @@ reactSamplesSection.route('/private/data', {
         });
     }
 });
+
+
+reactSamplesSection.route('/private/data/user', {
+    name: 'reactSamplePrivateDataUser',
+    action() {
+        ReactLayout.render(MainLayout, {
+            content: <SamplePrivateDataUserPage />
+        });
+    }
+});
