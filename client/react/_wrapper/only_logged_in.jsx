@@ -4,12 +4,12 @@ OnlyLoggedIn = function (Component) {
         mixins: [ReactMeteorData],
         getMeteorData() {
             return {
-                currentUser: Meteor.user()
+                user: Meteor.user()
             }
         },
         render: function() {
-            return ( this.data.currentUser
-                ?   <Component {...this.props}/>
+            return ( this.data.user
+                ?   <Component {...this.props} {...this.data} />
                 :   <span> Please log in to see this page. </span>
             );
         }

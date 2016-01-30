@@ -17,7 +17,7 @@ reactSamplesSection.route('/private', {
     name: 'reactSamplePrivate',
     action() {
         ReactLayout.render(MainLayout, {
-            content: <SamplePrivatePage name="Zarazi" />
+            content: <SamplePrivatePage />
         });
     }
 });

@@ -1,6 +1,9 @@
-const samplePrivatePage = ({name}) => (
-    <div className="jumbotron">
-        <h3>{name}, You got it!</h3>
-    </div>
+SamplePrivatePage = (
+    OnlyLoggedIn(
+        ({user}) => (
+            <div className="jumbotron">
+                <h3>Hello, {user.emails[0].address}</h3>
+            </div>
+        )
+    )
 );
-SamplePrivatePage = OnlyLoggedIn(samplePrivatePage);

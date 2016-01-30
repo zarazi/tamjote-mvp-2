@@ -1,7 +1,7 @@
 <template name="samplePrivatePage">
     {{# onlyLoggedIn}}
         <div class="jumbotron">
-            <h2>You got it!</h2>
+            <h3>Hello, {{user.emails.[0].address}}</h3>
         </div>
     {{/onlyLoggedIn}}
 </template>
