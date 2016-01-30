@@ -22,12 +22,20 @@ reactSamplesSection.route('/private', {
     }
 });
 
-
 reactSamplesSection.route('/data', {
     name: 'reactSampleData',
     action() {
         ReactLayout.render(MainLayout, {
             content: <SampleDataPage />
+        });
+    }
+});
+
+reactSamplesSection.route('/private/data', {
+    name: 'reactSamplePrivateData',
+    action() {
+        ReactLayout.render(MainLayout, {
+            content: <SamplePrivateDataPage />
         });
     }
 });
