@@ -1,0 +1,14 @@
+<template name="sampleDataItem">
+    <div>{{title}}</div>
+</template>
+
+<template name="sampleDataPage">
+    {{#withData}}
+        <div class="jumbotron">
+            <h3>List</h3>
+            {{#each item in list}}
+                {{>sampleDataItem title=item.title}}
+            {{/each}}
+        </div>
+    {{/withData}}
+</template>

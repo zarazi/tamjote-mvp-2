@@ -1,0 +1,7 @@
+<template name="withData">
+    {{#if Template.subscriptionsReady}}
+        {{> Template.contentBlock}}
+    {{else}}
+        <div>Loading ...</div>
+    {{/if}}
+</template>
