@@ -30,3 +30,12 @@ blazeSamplesSection.route('/data', {
         });
     }
 });
+
+blazeSamplesSection.route('/private/data', {
+    name: 'blazeSamplePrivateData',
+    action() {
+        BlazeLayout.render('mainLayout', {
+            content: 'samplePrivateDataPage'
+        });
+    }
+});
