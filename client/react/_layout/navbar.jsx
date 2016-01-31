@@ -21,7 +21,7 @@ NavbarComponent = React.createClass({
                             <span className="icon-bar"></span>
                             <span className="icon-bar"></span>
                         </button>
-                        <a className="navbar-brand" href={FlowHelpers.pathFor('reactHome')}>Project name</a>
+                        <a className="navbar-brand" href={FlowHelpers.pathFor('reactHome')}>Tamjote #2</a>
                     </div>
                     <div id="navbar" className="navbar-collapse collapse" onClick={this.handleClick}>
                         <ul className="nav navbar-nav">
